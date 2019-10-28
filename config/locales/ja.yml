@@ -10,7 +10,7 @@ ja:
   models:
     task: メモ帳
   attributes:
-    task:  
+    task: 
     id: ID
     name: 名称
     description: 詳しい説明
@@ -19,6 +19,7 @@ ja:
     created_at: 登録日時
     updated_at: 更新日時
     organizer: 投稿者
+    place: 場所
   date:
     abbr_day_names:
     - 日

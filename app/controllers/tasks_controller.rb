@@ -17,9 +17,7 @@ class TasksController < ApplicationController
   end
 
   def create
-    icon_name:"default_icon.png"
     @task = current_user.tasks.new(task_params)
-
 
     if params[:back].present?
       render :new
@@ -28,7 +26,7 @@ class TasksController < ApplicationController
 
     if @task.save
       TaskMailer.creation_email(@task).deliver_now
-      redirect_to @task, notice: "タスク「#{@task.name}」を登録しました。"
+      redirect_to @task, notice: "イベント「#{@task.name}」を登録しました。"
     else
       render :new
     end
@@ -36,11 +34,11 @@ class TasksController < ApplicationController
 
   def update
     @task.update!(task_params)
-    redirect_to tasks_url, notice: "タスク「#{@task.name}」を更新しました。"
+    redirect_to tasks_url, notice: "イベント「#{@task.name}」を更新しました。"
   end
 
   def destroy
-    @task.destroy
+      redirect_to tasks_url, notice: "タスク「#{@task.name}」を削除しました。"
   end
 
   def confirm_new

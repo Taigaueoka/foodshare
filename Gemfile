@@ -77,3 +77,6 @@ gem 'evil_icons', github: 'outpunk/evil-icons'
 
 # Use ActiveStorage variant
 gem 'mini_magick', '~> 4.8'
+gem "aws-sdk-s3", require: false
+
+gem 'fog-aws'

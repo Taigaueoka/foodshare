@@ -94,4 +94,5 @@ Rails.application.configure do
 
 
   config.public_file_server.enabled = true # true に変更
+　#config.active_storage.service = :amazon
 end

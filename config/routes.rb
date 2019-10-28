@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-
   get 'posts/index'
   get 'posts/show'
   get 'users/index'
@@ -19,5 +18,6 @@ Rails.application.routes.draw do
   root to: 'profiles#index'
   resources :profiles do
     post :confirm, action: :confirm_new, on: :new
+    
   end
 end

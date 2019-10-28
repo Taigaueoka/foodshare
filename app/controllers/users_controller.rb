@@ -8,7 +8,6 @@ class UsersController < ApplicationController
   end
 
   def create
-    icon_name:"default_icon.png"
   end
   
   def user_params

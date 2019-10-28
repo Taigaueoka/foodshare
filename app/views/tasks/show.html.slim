@@ -1,7 +1,8 @@
-h1 タスクの詳細
+h1 イベントの詳細
 
 .nav.justify-content-end
   = link_to '一覧', tasks_path, class: 'nav-link'
+  
 table.table.table-hover
   tbody
     tr
@@ -27,4 +28,4 @@ table.table.table-hover
       td= @current_user.name
 
 = link_to '編集', edit_task_path, class: 'btn btn-primary mr-3'
-= link_to '削除', @task, method: :delete, data: { confirm: "タスク「#{@task.name}」を削除します。よろしいですか？" }, class: 'btn btn-danger'
+= link_to '削除', @task, method: :delete, data: { confirm: "イベント「#{@task.name}」を削除します。よろしいですか？" }, class: 'btn btn-danger'
