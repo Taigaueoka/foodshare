@@ -10,10 +10,10 @@ test:
   service: Disk
   root: <%= Rails.root.join("tmp/storage") %>
  
-#amazon:
-  #service: S3
-  #access_key_id: "AKIARHQKVUOO3JJ3C6FR"
-  #secret_access_key: "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"
+amazon:
+  service: S3
+  access_key_id: "AKIARHQKVUOO3JJ3C6FR"
+  secret_access_key: "tiAJ5GKysmbY3W97qBFg4rRQjgrjTd/Ovb0tHgNL"
 
 # Remember not to checkin your GCS keyfile to a repository
 # google:
