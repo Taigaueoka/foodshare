@@ -13,5 +13,11 @@
   .form-group
     = f.label :image
     = f.file_field :image, class: 'form-control'
+  .form-group
+    = f.label :tokyoarea
+    = f.text_field :tokyoarea, class: 'form-control', id: 'task_tokyoarea'
+  .form-group
+    = f.label :tokyodate
+    = f.text_field :tokyodate, class: 'form-control', id: 'task_tokyodate'
     
   = f.submit nil, class: 'btn btn-primary'

@@ -19,7 +19,8 @@ ja:
     created_at: 登録日時
     updated_at: 更新日時
     organizer: 投稿者
-    place: 場所
+    tokyoarea: 場所
+    tokyodate: 開催日時
   date:
     abbr_day_names:
     - 日
