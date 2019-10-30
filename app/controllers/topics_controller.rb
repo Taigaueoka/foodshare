@@ -19,7 +19,7 @@ class TopicsController < ApplicationController
 
   def delete
     @topic = Topic.find(params[:id])
-    @topic.delete
+    @topic.destroy
     redirect_to topics_index_path
   end
 
