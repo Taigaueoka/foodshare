@@ -19,10 +19,4 @@ Rails.application.routes.draw do
   resources :tasks do
     post :confirm, action: :confirm_new, on: :new
   end
-  
-  root to: 'profiles#index'
-  resources :profiles do
-    post :confirm, action: :confirm_new, on: :new
-    
-  end
 end
